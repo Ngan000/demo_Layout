@@ -42,144 +42,76 @@ class MyLayout extends StatelessWidget {
                     decoration: BoxDecoration(
                       border: Border.all(
                           width: 1.0,
-
                       ),
                     ),
                   child: Row(
                     children: [
-                      Column(children: [
-                        Flexible(child: Container(
-                          width: 273,
-                          color: Colors.yellow,
-                        ),
-                        ),
-                      ],
-                      ),
-                      Column(children: [
-                        Flexible(child: Container(
-                          child: Row(
-                            children: [
-                              Container(
-                                child: Column(
-                                  children: [
-                                    Column(
-                                      children: [
-                                        Container(
-                                          height: 89.5,
-                                          color: Colors.green,
-                                        )
-                                      ],
-                                    ),
-                                    // xanh 1
-                                    Column(
-                                      children: [
-                                        Container(
-                                          height: 89.5,
-                                          color: Colors.green,
-                                        )
-                                      ],
-                                    ),
-                                    //xanh 2
-                                  ],
-                                ),
-                                  height: 422,
-                                  width: 136,
-
-                              ),
-                            ],
+                      Expanded(
+                          child: Container(
+                            color: Colors.yellow,
                           ),
-                        ),
-                        ),
-                      ],
+                        flex: 2,
                       ),
+                      Expanded(child: Column(
+                        children: [
+                          Expanded(child: Container(
+                            color: Colors.lightGreen
+                          ),),
+                          Expanded(child: Container(
+                            color: Colors.lightGreen
+                          ),),
+                        ],
+                      ))
                     ],
-
                     )
-
                   ),
-
                 ),
-
 
             Expanded(
                 flex: 7,
                 child: Container(
-
                   child: Row(
                     children: [
-                      Column(
-                        children: [
-                          Container(
-                            child: Column(
-                              children: [
-                                Column(
-                                  children: [
-                                    Container(
-                                      height: 180,
-                                      color: Colors.green,
-                                    )
-                                  ],
-                                ),
-                                //xanh
-                                Column(
-                                  children: [
-                                    Container(
-                                      height: 242,
-                                      color: Colors.pinkAccent,
-                                    )
-                                  ],
-                                ),
-                              ],
-                            ),
-                            //hong
-                            height: 422,
-                            width: 137,
-                            //color: Colors.lime,
-                          )
-                        ],
-                      ),
-                          Column(
+                     Expanded(
+                         child: Column(
+                           children: [
+                             Expanded(child: Container(
+                               color: Colors.lightGreen,
+                             ),
+                               flex: 2,
+                             ),
+                             Expanded(child: Container(
+                               color: Colors.pinkAccent,
+                             ),
+                               flex: 3,
+                             ),
+                           ],
+                         ),),
+                      Expanded(
+                          child: Container(
+                            color: Colors.yellow,
+                          ),),
+                      Expanded(
+                          child: Column(
                             children: [
-                              Container(
-
-                                height: 422,
-                                width: 137,
+                              Expanded(child: Container(
+                                color: Colors.pinkAccent,
+                              ),
+                                flex: 1,
+                              ),
+                              Expanded(child: Container(
+                                color: Colors.pinkAccent,
+                              ),
+                                flex: 2,
+                              ),
+                              Expanded(child: Container(
                                 color: Colors.yellow,
                               ),
+                                flex: 2,
+                              ),
                             ],
-                          ),
-                      Column(
-                        children: [
-                          Container(
-                            child: Column(
-                              children: [
-                                Column(
-                                  children: [
-                                    Container(
-                                      height: 91,
-                                      color: Colors.pinkAccent,
-                                    )
-                                  ],
-                                ),
-                                //hong 1
-                                Column(
-                                  children: [
-                                    Container(
-                                      height: 179,
-                                      color: Colors.pinkAccent,
-                                    )
-                                  ],
-                                ),
-                              ],
-                            ),
-                            //hong 2
-                            height: 422,
-                            width: 137,
-                            color: Colors.yellow,
-                          ),
-                        ],
+                          ),),
 
-                      ),
                         ],
                       ),
 
